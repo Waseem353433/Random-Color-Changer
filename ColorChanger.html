@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button>Change Color</button>
+
+
+<script>
+  let btn = document.querySelector("button")
+  btn.addEventListener("click",()=>{
+    let red = Math.ceil(Math.random()*255)
+    let green = Math.ceil(Math.random()*255)
+    let blue = Math.ceil(Math.random()*255)
+    document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
+    console.log(red,green,blue);
+
+  })
+  console.log(Math.random()*10);
+  console.log(Math.ceil(Math.random()*10));
+</script>
+</body>
+
+</html>
